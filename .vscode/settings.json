@@ -1,0 +1,20 @@
+{
+  // Deno only for Edge Functions; everything else uses the workspace TypeScript.
+  "deno.enablePaths": ["supabase/functions"],
+  "deno.lint": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[sql]": { "editor.formatOnSave": false },
+
+  "files.associations": { "*.css": "tailwindcss" },
+  "tailwindCSS.experimental.configFile": "apps/web/src/index.css",
+
+  "i18n-ally.localesPaths": ["apps/web/src/i18n/locales"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "en",
+
+  "search.exclude": { "**/dist": true, "**/dev-dist": true, "pnpm-lock.yaml": true }
+}

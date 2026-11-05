@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "denoland.vscode-deno",
+    "bradlc.vscode-tailwindcss",
+    "vitest.explorer",
+    "lokalise.i18n-ally",
+    "ms-ossdata.vscode-pgsql",
+    "supabase.vscode-supabase-extension",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens"
+  ]
+}

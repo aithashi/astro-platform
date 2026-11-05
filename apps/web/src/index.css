@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #7a3e1d;
+  --color-brand-soft: #f3d9a4;
+  --color-surface: #fbf8f3;
+  --color-ink: #2b1d14;
+  --color-muted: #6f6158;
+  --font-sans: "Noto Sans", "Noto Sans Kannada", "Noto Sans Devanagari", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-ink antialiased;
+  }
+}

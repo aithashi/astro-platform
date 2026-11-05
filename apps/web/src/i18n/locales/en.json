@@ -1,0 +1,30 @@
+{
+  "app": { "name": "Astro Consult", "tagline": "Guidance for health, family and well-being" },
+  "landing": {
+    "servicesTitle": "Our services",
+    "servicesPending": "Services will be listed here soon.",
+    "formTitle": "Share your concern",
+    "formPending": "The concern form arrives in the next release.",
+    "associatesTitle": "Further consultations",
+    "associatesIntro": "After your consultation you may be guided to these practitioners.",
+    "associatesPending": "Contact details will be added soon.",
+    "call": "Call",
+    "whatsapp": "WhatsApp"
+  },
+  "track": { "title": "Your ticket", "pending": "Ticket tracking arrives in a later release." },
+  "admin": {
+    "title": "Provider dashboard",
+    "login": "Sign in",
+    "emailLabel": "Email",
+    "sendLink": "Send sign-in link",
+    "linkSent": "Check your email for the sign-in link.",
+    "inbox": "Tickets",
+    "schedule": "Manage schedule",
+    "team": "Team",
+    "associates": "Associates",
+    "settings": "WhatsApp settings",
+    "signOut": "Sign out",
+    "comingSoon": "Coming in a later milestone."
+  },
+  "pwa": { "update": "A new version is available.", "reload": "Reload" }
+}

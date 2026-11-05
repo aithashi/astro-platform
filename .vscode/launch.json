@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Web: debug in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/apps/web",
+      "preLaunchTask": "web: dev"
+    },
+    {
+      "name": "Web: debug in Chrome (phone size)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/apps/web",
+      "runtimeArgs": ["--window-size=400,860"],
+      "preLaunchTask": "web: dev"
+    },
+    {
+      // Start the "functions: serve (debug)" task first, then call the function.
+      "name": "Edge Functions: attach",
+      "type": "node",
+      "request": "attach",
+      "port": 8083,
+      "localRoot": "${workspaceFolder}/supabase/functions",
+      "remoteRoot": "/home/deno/functions"
+    }
+  ]
+}

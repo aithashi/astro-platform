@@ -1,0 +1,27 @@
+{
+  "name": "astro-platform",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset",
+    "db:types": "supabase gen types typescript --local > packages/shared/src/database.types.ts",
+    "functions:serve": "supabase functions serve",
+    "dev:bootstrap": "node scripts/dev-bootstrap.mjs"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "supabase": "^3.0.0",
+    "typescript": "^5.9.3"
+  }
+}

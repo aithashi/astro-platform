@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "web: dev",
+      "type": "shell",
+      "command": "pnpm dev",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "vite",
+        "pattern": { "regexp": "^x^" },
+        "background": { "activesBegin": "VITE", "activesEnd": "Local:", "beginsPattern": "VITE", "endsPattern": "Local:" }
+      }
+    },
+    {
+      "label": "supabase: start",
+      "type": "shell",
+      "command": "pnpm db:start",
+      "problemMatcher": []
+    },
+    {
+      "label": "functions: serve (debug)",
+      "type": "shell",
+      "command": "pnpm exec supabase functions serve --inspect-mode brk",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
